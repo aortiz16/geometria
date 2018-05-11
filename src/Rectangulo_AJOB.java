@@ -18,7 +18,8 @@ public class Rectangulo_AJOB extends FiguraGeometrica_AJOB {
 	/**
 	 * la clase RECTANGULO CONTIENE DOS MÉTODOS
 	 * en el método llamado "area" se calcula la superficie del rectángulo
-	 * multiplicando lado1 x lado2
+	 * multiplicando lado1 x lado2 (dos parámetros que le llegan lG y lP a la función/método)
+	 * DEVUELVE: el resultado
 	 */
 	
 	@Override
@@ -29,6 +30,7 @@ public class Rectangulo_AJOB extends FiguraGeometrica_AJOB {
 	/**
 	 *   en el método llamado "perimetro" se calcula la longitud de todos sus lados
 	 * sumando  (lado1 x 2 ) + lado2 + lado2
+	 * DEVUELVE: el resultado y no recibe parámetros éste método
 	 */
 
 	@Override
