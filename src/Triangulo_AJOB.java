@@ -4,6 +4,10 @@ public class Triangulo extends FiguraGeometrica {
 	private double b;
 	private double c;
 	
+	public double semiPerimetro() {
+		return this.perimetro() / 2;
+	}
+	
 	public Triangulo(String tipoFigura, double lado1, double lado2, double lado3) {
 		super(tipoFigura);
 		a = lado1;
@@ -23,7 +27,5 @@ public class Triangulo extends FiguraGeometrica {
 		return Math.sqrt(sp * (sp-a) * (sp-b) * (sp-c));
 	}
 	
-	public double semiPerimetro() {
-		return this.perimetro() / 2;
-	}
+	
 }
