@@ -1,11 +1,17 @@
-
-public class Circulo extends FiguraGeometrica {
+/*
+ *  Añade una sentencia condicional al código del método constructor de la clase Circulo,
+ *  
+ *   SI parámetro_radio ES negativo     -->        lo convierta a positivo.
+ *   
+ */
+public class Circulo_AJOB extends FiguraGeometrica_AJOB {
 	private double radio;
 	//Constante pi
 	static final double PI = 3.1416;
 	
-	public Circulo(double r, String tipoFigura) {
+	public Circulo_AJOB(double r, String tipoFigura) {
 		super(tipoFigura);
+		if ( r < 0  ) {  r = r * -1 ; }
 		radio = r;
 	}
 
