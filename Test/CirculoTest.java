@@ -9,14 +9,15 @@ import org.junit.Test;
 
 /**
  * @author Tony
- * @Version 2.1  
- * @Date 12 / 05 / 18  12:00h
+ * @Version 2.3  
+ * @Date 14 / 05 / 18  20:00h
  * 
  */
 
 
 public class CirculoTest extends Circulo {
 	private double radio;
+	private String redondel;
 	private double res;
 	
 	private CirculoTest circulin;
@@ -24,7 +25,8 @@ public class CirculoTest extends Circulo {
 	public CirculoTest(double r, String tipoFigura) {
 		super(r, tipoFigura);
 		// TODO Auto-generated constructor de la clase 
-		radio = r;		 
+		radio = r;	
+		redondel = tipoFigura;
 	}
 
 	/**
@@ -68,7 +70,7 @@ public class CirculoTest extends Circulo {
 	 */
 	@Test
 	public final void testArea() {
-		//Circulo circulin = new Circulo(7, tipoFigura) ;
+		Circulo circulin = new Circulo(7, "circulo") ;
 		 double res = circulin.area() ;
 		 assertEquals(  153,93 , res);
 		 
@@ -81,7 +83,7 @@ public class CirculoTest extends Circulo {
 	 */
 	@Test
 	public final void testPerimetro() {	
-		// Circulo circulin = new Circulo(7, tipoFigura) ;
+		 Circulo circulin = new Circulo(7, "Redondo") ;
 		 double res = circulin.perimetro() ;
 		 assertEquals(  43,98 , res);
 	//	 assertEquals(  43,98 , circulin.getTipoFigura() );
@@ -98,26 +100,18 @@ public class CirculoTest extends Circulo {
 		fail("Not yet implemented"); // TODO
 	}
 	
-	// el TEST  espera una Excepcion
-	@Test(expected=java.lang.ArithmeticException.class)
-	public void testAreaException() throws Exception   {
-		Circulo circulin = new Circulo(0, tipoFigura) ;
-		circulin.area();
-		// double res = circulin.area();
-	}
-	
 	
 	@Test(expected=Exception.class)  // Prueba radio = " 0 "
 	public void testRadio0() throws Exception   {
-		Circulo circulin = new Circulo(0, tipoFigura) ;
-		circulin.area();
+		Circulo circulin = new Circulo(0, "circulo Redondo") ;
+		double res = circulin.area();
 		// double res = circulin.area();
 	}
 
 	@Test(expected=Exception.class)  // Prueba radio Negativo
 	public void testRadioNegativo() throws Exception   {
-		Circulo circulin = new Circulo(-3, tipoFigura) ;
-		circulin.area();
+		Circulo circulin = new Circulo(-3, "circulon") ;
+		double res = circulin.area();
 		// double res = circulin.area();
 	}
 
