@@ -10,6 +10,13 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
  
 
+/**
+ * @author Tony
+ * @Version 2.3  
+ * @Date 28 / 05 / 18  20:00h
+ * 
+ */
+
 @RunWith(Parameterized.class)
 		
 public class GeometriaTestSuite extends TestCase {
