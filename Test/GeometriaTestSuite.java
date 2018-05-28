@@ -43,7 +43,7 @@ public class GeometriaTestSuite extends TestCase {
 	@Parameters // método con bateria de pruebas
 	public static Collection<Object[]> numeros(){
 		return Arrays.asList(new Object [] []  {
-	 		{7."circulo".153,93} , { -2,3."circulo2".16,619} , {123,342."circulo3".47793,943}
+	 		{7,"circulo",153.93} , { -2.3,"circulo2",16.619} , {123.342,"circulo3",47793.943}
 	 	}) ;
 		// NOTA: 
 	//  DA ERROR de las dos formas  la de arriba y la linea inferior "sin un parámetro de tipo String"
