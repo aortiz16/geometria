@@ -49,7 +49,7 @@ public class GeometriaTestSuite extends TestCase {
 	//  DA ERROR de las dos formas  la de arriba y la linea inferior "sin un parámetro de tipo String"
 		//{7.153,93} , { -2,3.16,619} , {123,342.47793,943}  	}) ;
 	}
-	
+	 
 //	@Test	
 	public  void testArea() {
 		Circulo circulin = new Circulo(7, "circulo") ;
